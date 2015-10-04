@@ -1,13 +1,29 @@
 ## Installation
 
 1. Clone this configuration:
-
-       rm -rf ~/.atom && git clone git@github.com:thomas88/atom-config.git ~/.atom
+  ```bash
+  rm -rf ~/.atom && git clone git@github.com:thomas88/atom-config.git ~/.atom
+  ```
 
 2. Setup `apm`:
-
-       apm stars
+  ```bash
+  apm stars
+  ```  
 
 3. Install starred packages:
+  ```bash
+  apm stars --install
+  ```
+  
+4. Install linters:
+  ```bash
+  npm install -g eslint
+  npm install -g jsonlint
+  ```
 
-       apm stars --install
+## Adding new packages
+
+```bash
+apm star minimap
+apm stars --install
+```
